@@ -41,9 +41,28 @@ module.exports = {
 	},
 	module: {
 		rules: [{
-			test: /\.[jt]sx?$/,
-			use: ['ts-loader']
-		}]
+				test: /\.[jt]sx?$/,
+				use: ['ts-loader']
+			},
+			{
+				// test: /\.css$/,
+				// use: ['style-loader', 'css-loader']  // для подключения глобальных модулей
+				test: /\.less$/,
+				use: [
+					'style-loader',
+					{
+						loader: 'css-loader',
+						options: {
+							modules: {
+								mode: 'local',
+								localIdentName: '[name]__[local]___[hash:base64:5]',
+							}
+						}
+					},
+					'less-loader',
+				]
+			}
+		]
 	},
 	devtool: setupDevtool(),
 	plugins: IS_DEV ? [

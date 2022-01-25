@@ -1,11 +1,14 @@
 import * as React from 'react';
 import { hot } from 'react-hot-loader/root'
 
+import styles from './header.less';
+
+
 function HeaderComponent() {
 	return (
-		<header>
+		<header className={styles.example}>
 			<h1>Хрен им</h1>
-			<p>Я их сделал!!!!</p>
+			<p>Я нашел решение!!!!</p>
 		</header>
 	)
 }
