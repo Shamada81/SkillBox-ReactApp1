@@ -1,0 +1,18 @@
+.container {
+	color: blue;
+	margin: 200px auto;
+}
+.name {
+	font-size: 48px;
+}
+.gap {
+	height: 24px;
+}
+.button {
+	width: 240px;
+	height: 100px;
+	border-radius: 20px;
+	background-color: blue;
+	font-size: 24px;
+	text-align: center;
+}
