@@ -3,6 +3,7 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+	order: 3;
 }
 
 @media all and (min-width: 1024px) {

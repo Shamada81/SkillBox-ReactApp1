@@ -8,6 +8,7 @@ import { CardsList } from './shared/CardsList';
 import { generateId, generateRandomString} from './utils/react/generateRandomIndex';
 import { merge } from './utils/js/merge';
 import { Dropdown } from './shared/Dropdown';
+import { Text, EColors } from './shared/Text';
 
 const LIST = [
 	{As: 'a' as const, text: 'some' },
@@ -32,17 +33,6 @@ function AppComponent() {
 			<Header />
 			<Content>
 				<CardsList />
-				<div style={{ padding: 20}}>
-					<br />
-					<Dropdown 
-						onOpen={() => console.log('open')}
-						onClose={() => console.log('close')}
-						isOpen={false}
-						button={<button>Test</button>}
-					>
-						<CardsList />
-					</Dropdown>
-				</div>
 			</Content>
 		</Layout>
 	)

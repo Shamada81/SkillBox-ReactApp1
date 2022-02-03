@@ -1,6 +1,7 @@
 .preview {
     max-height: 178px;
     margin: 0 -20px;
+    order: 2;
 }
 
 .previewImg {
