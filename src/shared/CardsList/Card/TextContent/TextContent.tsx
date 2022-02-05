@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './textcontent.css';
+import { Title } from './Title';
 import { UserLink } from './UserLink';
 
 export function TextContent() {
@@ -12,11 +13,7 @@ export function TextContent() {
           4 часа назад
         </span>
       </div>
-      <h2 className={styles.title}>
-        <a href="#post-url" className={styles.postLink}>
-          Следует отметить, что новая модель организационной деятельности поможет
-        </a>
-      </h2>
+      <Title />
     </div>
   );
 }
