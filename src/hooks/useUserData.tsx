@@ -7,7 +7,6 @@ interface IUserData {
 	iconImg?: string;
 }
 
-// export function useUserData( token: string) {
 export function useUserData() {
 	const [ data, setData ] = useState<IUserData>({});
 	const token = useContext(tokenContext)
